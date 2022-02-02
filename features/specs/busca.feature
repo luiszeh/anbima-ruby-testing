@@ -7,7 +7,7 @@ Quero realizar uma pesquisa
 Para encontrar um ativo do tipo Debêntures
 
 Contexto:
-  Dado que estou na página de busca por Debêntures
+  Dado que estou na página inicial
 
 Cenário: Busca por Código B3
   Quando insiro o Código B3 no campo de busca
