@@ -1,4 +1,4 @@
-Dado('que estou na página de busca por Debêntures') do
+Dado('que estou na página inicial') do
     @busca_page = Busca.new
     @busca_page.load
 end
@@ -36,7 +36,7 @@ Então ('encontro o ativo pelo nome do Emissor') do
 end
 
 Então ('encontro o ativo pelo nome do Agente') do
-  expect(@busca_page.busca_sucedida).to have_content("Debêntures (1)")   
+  expect(@busca_page.busca_sucedida).to have_content("Debêntures (574)")   
 end
 
 Então ('encontro o ativo pelo CNPJ') do
