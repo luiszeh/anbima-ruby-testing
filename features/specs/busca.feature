@@ -10,21 +10,21 @@ Contexto:
   Dado que estou na página inicial
 
 Cenário: Busca por Código B3
-  Quando realizo a busca pelo Código B3
-  Então encontro o ativo pelo Código B3 e acesso seus detalhes
+  Quando realizo a busca por "AALM11", utilizando a opção Debêntures
+  Então visualizo o ativo "AALM11" no resultado da busca
 
 Cenário: Busca por ISIN
-  Quando realizo a busca pelo Código ISIN
-  Então encontro o ativo pelo ISIN e acesso seus detalhes
+  Quando realizo a busca por "BRAALMDBS009", utilizando a opção Debêntures
+  Então visualizo o ativo "AALM11" no resultado da busca
 
 Cenário: Busca por Emissor
-  Quando realizo a busca pelo nome do Emissor
-  Então encontro o ativo pelo nome do Emissor e acesso seus detalhes
+  Quando realizo a busca por "AURA ALMAS MINERACAO S.A", utilizando a opção Debêntures
+  Então visualizo o ativo "AALM11" no resultado da busca
 
 Cenário: Busca por Agente
-  Quando realizo a busca pelo nome do Agente
-  Então encontro o ativo pelo nome do Agente e acesso seus detalhes
+  Quando realizo a busca por "OLIVEIRA TRUST DTVM S/A", utilizando a opção Debêntures
+  Então visualizo o ativo "AALM11" no resultado da busca
 
 Cenário: Busca por CNPJ
-  Quando realizo a busca pelo CNPJ
-  Então encontro o ativo pelo CNPJ e acesso seus detalhes
+  Quando realizo a busca por "08213823000107", utilizando a opção Debêntures
+  Então visualizo o ativo "AALM11" no resultado da busca

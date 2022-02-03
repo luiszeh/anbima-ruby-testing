@@ -2,47 +2,20 @@ class Busca < SitePrism::Page
 
 set_url '/'
 
-element :input_b3, '.anbima-ui-input-search__text'
-element :input_isin, '.anbima-ui-input-search__text'
-element :input_emissor, '.anbima-ui-input-search__text'
-element :input_agente, '.anbima-ui-input-search__text'
-element :input_cnpj, '.anbima-ui-input-search__text'
+element :input_busca, '.anbima-ui-input-search__text'
 element :button_debentures, '#form-button-option-debentures'
 element :detalhes_page, '#output__container--expressaoPapel'
 element :button_detalhes, '#item-button-detalhe-0'
+element :resultado_aalm11, '.display-bold'
 
 def detalhes_ativo()
     button_detalhes.click
 end
 
-def busca_b3()
-    input_b3.send_keys("AALM11")
-    button_debentures.click
-    detalhes_ativo()
-end
-
-def busca_isin()
-    input_isin.send_keys("BRAALMDBS009")
-    button_debentures.click
-    detalhes_ativo()
-end
-
-def busca_emissor()
-    input_emissor.send_keys("AURA ALMAS MINERACAO S.A")
-    button_debentures.click
-    detalhes_ativo()
-end
-
-def busca_agente()
-    input_agente.send_keys("OLIVEIRA TRUST DTVM S/A")
-    button_debentures.click
-    detalhes_ativo()
-end
-
-def busca_cnpj()
-    input_cnpj.send_keys("08213823000107")
-    button_debentures.click
-    detalhes_ativo()
+def buscar(param)
+  input_busca.send_keys(param)
+  button_debentures.click
+  detalhes_ativo()
 end
 
 end
