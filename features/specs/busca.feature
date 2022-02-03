@@ -10,21 +10,21 @@ Contexto:
   Dado que estou na página inicial
 
 Cenário: Busca por Código B3
-  Quando insiro o Código B3 no campo de busca
-  Então encontro o ativo pelo Código B3
+  Quando realizo a busca pelo Código B3
+  Então encontro o ativo pelo Código B3 e acesso seus detalhes
 
 Cenário: Busca por ISIN
-  Quando insiro o código ISIN no campo de busca
-  Então encontro o ativo pelo ISIN
+  Quando realizo a busca pelo Código ISIN
+  Então encontro o ativo pelo ISIN e acesso seus detalhes
 
 Cenário: Busca por Emissor
-  Quando insiro o nome do Emissor no campo de busca
-  Então encontro o ativo pelo nome do Emissor
+  Quando realizo a busca pelo nome do Emissor
+  Então encontro o ativo pelo nome do Emissor e acesso seus detalhes
 
 Cenário: Busca por Agente
-  Quando insiro o nome do Agente no campo de busca
-  Então encontro o ativo pelo nome do Agente
+  Quando realizo a busca pelo nome do Agente
+  Então encontro o ativo pelo nome do Agente e acesso seus detalhes
 
 Cenário: Busca por CNPJ
-  Quando insiro o CNPJ no campo de busca
-  Então encontro o ativo pelo CNPJ
+  Quando realizo a busca pelo CNPJ
+  Então encontro o ativo pelo CNPJ e acesso seus detalhes
