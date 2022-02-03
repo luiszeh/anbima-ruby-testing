@@ -3,42 +3,42 @@ Dado('que estou na página inicial') do
     @busca_page.load
 end
 
-Quando('insiro o Código B3 no campo de busca') do
+Quando('realizo a busca pelo Código B3') do
   @busca_page.busca_b3()
 end
 
-Quando('insiro o código ISIN no campo de busca') do
+Quando('realizo a busca pelo Código ISIN') do
   @busca_page.busca_isin()
 end
 
-Quando('insiro o nome do Emissor no campo de busca') do
+Quando('realizo a busca pelo nome do Emissor') do
   @busca_page.busca_emissor()   
 end
 
-Quando('insiro o nome do Agente no campo de busca') do
+Quando('realizo a busca pelo nome do Agente') do
   @busca_page.busca_agente() 
 end
 
-Quando('insiro o CNPJ no campo de busca') do
+Quando('realizo a busca pelo CNPJ') do
   @busca_page.busca_cnpj()
 end
 
-Então ('encontro o ativo pelo Código B3') do
-  expect(@busca_page.busca_sucedida).to have_content("Debêntures (1)")
+Então ('encontro o ativo pelo Código B3 e acesso seus detalhes') do
+  expect(@busca_page.detalhes_page).to have_content("Expressão do papel")
 end
 
-Então ('encontro o ativo pelo ISIN') do
-  expect(@busca_page.busca_sucedida).to have_content("Debêntures (1)")
+Então ('encontro o ativo pelo ISIN e acesso seus detalhes') do
+  expect(@busca_page.detalhes_page).to have_content("Expressão do papel")
 end
 
-Então ('encontro o ativo pelo nome do Emissor') do
-  expect(@busca_page.busca_sucedida).to have_content("Debêntures (1)")   
+Então ('encontro o ativo pelo nome do Emissor e acesso seus detalhes') do
+  expect(@busca_page.detalhes_page).to have_content("Expressão do papel")   
 end
 
-Então ('encontro o ativo pelo nome do Agente') do
-  expect(@busca_page.busca_sucedida).to have_content("Debêntures (574)")   
+Então ('encontro o ativo pelo nome do Agente e acesso seus detalhes') do
+  expect(@busca_page.detalhes_page).to have_content("Expressão do papel")   
 end
 
-Então ('encontro o ativo pelo CNPJ') do
-  expect(@busca_page.busca_sucedida).to have_content("Debêntures (1)")  
+Então ('encontro o ativo pelo CNPJ e acesso seus detalhes') do
+  expect(@busca_page.detalhes_page).to have_content("Expressão do papel")  
 end
