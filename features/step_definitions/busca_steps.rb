@@ -24,21 +24,21 @@ Quando('realizo a busca pelo CNPJ') do
 end
 
 Então ('encontro o ativo pelo Código B3 e acesso seus detalhes') do
-  expect(@busca_page.detalhes_page).to have_content("Condições gerais da série")
+  expect(@busca_page.detalhes_page).to have_content("Expressão do papel")
 end
 
 Então ('encontro o ativo pelo ISIN e acesso seus detalhes') do
-  expect(@busca_page.detalhes_page).to have_content("Condições gerais da série")
+  expect(@busca_page.detalhes_page).to have_content("Expressão do papel")
 end
 
 Então ('encontro o ativo pelo nome do Emissor e acesso seus detalhes') do
-  expect(@busca_page.detalhes_page).to have_content("Condições gerais da série")   
+  expect(@busca_page.detalhes_page).to have_content("Expressão do papel")   
 end
 
 Então ('encontro o ativo pelo nome do Agente e acesso seus detalhes') do
-  expect(@busca_page.detalhes_page).to have_content("Condições gerais da série")   
+  expect(@busca_page.detalhes_page).to have_content("Expressão do papel")   
 end
 
 Então ('encontro o ativo pelo CNPJ e acesso seus detalhes') do
-  expect(@busca_page.detalhes_page).to have_content("Condições gerais da série")  
+  expect(@busca_page.detalhes_page).to have_content("Expressão do papel")  
 end

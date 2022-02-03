@@ -8,7 +8,7 @@ element :input_emissor, '.anbima-ui-input-search__text'
 element :input_agente, '.anbima-ui-input-search__text'
 element :input_cnpj, '.anbima-ui-input-search__text'
 element :button_debentures, '#form-button-option-debentures'
-element :detalhes_page, '.caption'
+element :detalhes_page, '#output__container--expressaoPapel'
 element :button_detalhes, '#item-button-detalhe-0'
 
 def detalhes_ativo()
