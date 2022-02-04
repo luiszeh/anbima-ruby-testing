@@ -29,7 +29,6 @@ Cenário: Busca por CNPJ
   Quando realizo a busca por "08213823000107", utilizando a opção Debêntures
   Então visualizo o ativo "AALM11" no resultado da busca
 
-@tag1
 Cenário: Ver detalhes do resultado da busca
   Quando realizo a busca por "AALM11", utilizando a opção Debêntures
   E acesso a página de detalhes
